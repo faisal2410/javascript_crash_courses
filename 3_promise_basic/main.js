@@ -4,6 +4,7 @@ console.log("Introduction of Promises!");
 //     let value="Water";
 //     resolve(value);
 // });
+
 // let promiseError=new Promise(function(resolve,reject){
 //     reject(new Error("Disaster"));
 // });
@@ -16,7 +17,7 @@ console.log("Introduction of Promises!");
 
 // fulfilled /rejected =Settled
 
-// Result
+// Result:->
 // undefined : Initial phase when state is pending
 // value : When promise resolves successfully.
 // error : When promise rejects.
