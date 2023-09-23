@@ -122,26 +122,37 @@ console.log("Promise Chain");
 
 // Example6
 
-const number=new Promise(function(resolve,reject){
-    resolve(10);
+// const number=new Promise(function(resolve,reject){
+//     resolve(10);
+    
+// })
+
+// number
+// .then(function(value){
+//     value++;
+//     return value;
+// })
+// .then(function(value){
+//     value=value+10;
+//     return value;
+// })
+// .then(function(value){
+//     value=value+20;
+//     console.log(value);
+//     return value;
+// })
+
+// Example7
+
+const promise=new Promise(function(resolve,reject){
+    resolve("Testing finally");
+})
+
+promise.finally(function(){
+    console.log("Cleaned up");
     
 })
-
-number
 .then(function(value){
-    value++;
-    return value;
-})
-.then(function(value){
-    value=value+10;
-    return value;
-})
-.then(function(value){
-    value=value+20;
     console.log(value);
-    return value;
 })
-
-
-
 
