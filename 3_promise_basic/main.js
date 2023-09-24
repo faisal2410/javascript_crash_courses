@@ -68,28 +68,29 @@ console.log("Introduction of Promises!");
 
 // ✅Example3
 
-// let promise=new Promise(function(resolve,reject){
+let promise=new Promise(function(resolve,reject){
 
-//     setTimeout(function(){        
-//         // Reject it as the disaster happened
+    setTimeout(function(){        
+        // Reject it as the disaster happened
 
-//         // reject(new Error("Jack fell down and ..."));
-//         resolve("Water");
-//     },2000)
+        reject(new Error("Jack fell down and ..."));
+        // resolve("Water");
+    },2000)
 
 
    
-// });
+});
 
-// const grandParentsCooking = () => {
-//     promise.then(function(result){
-//         console.log(`Cooking starts with ${result}`);
-//     })
-//     .catch(function(error){
-//         console.log(`OMG!!! ${error.message}`);
-//     })
-// }
+const grandParentsCooking = () => {
+    promise
+    .then(function(result){
+        console.log(`Cooking starts with ${result}`);
+    })
+    .catch(function(error){
+        console.log(`OMG!!! ${error.message}`);
+    })
+}
 
-// grandParentsCooking();
+grandParentsCooking();
 
 
