@@ -46,6 +46,12 @@ try{
 
     console.log('*** Object Prevent Extensible ***');
 
+    // Object Immutability
+    // 1.Prevent Extension
+    // 2.Using the seal() method
+    // 3. Using the freeze() method
+
+
     // Making this object as not extensible
     Object.preventExtensions(user);
 
@@ -112,7 +118,7 @@ try{
         'password': 'fake-password',
         'port': 512,
         'admin': {
-          'name': 'Tapas',
+          'name': 'Faisal',
           'rights': ['create', 'update', 'delete']
         }
     }
