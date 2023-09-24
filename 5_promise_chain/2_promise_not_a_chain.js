@@ -13,6 +13,7 @@ let promise = new Promise(function (resolve, reject) {
     return value;
   });
   
+  
   promise.then(function (value) {
     value = value + 10;
     console.log(value);

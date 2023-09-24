@@ -144,15 +144,18 @@ console.log("Promise Chain");
 
 // Example7
 
-const promise=new Promise(function(resolve,reject){
-    resolve("Testing finally");
-})
+// const promise=new Promise(function(resolve,reject){
+//     reject(new Error("Rejecting a fake promise"));
+// })
 
-promise.finally(function(){
-    console.log("Cleaned up");
+
+// promise.then(function(value){
+//     console.log(value);
+// })
+// .catch(function(value){
+//     console.log("❌",value);
+// })
+// .finally(function(){
+//     console.log("Cleaned up");
     
-})
-.then(function(value){
-    console.log(value);
-})
-
+// })
